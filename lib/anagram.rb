@@ -7,12 +7,12 @@ class Anagram
 
   def match(list)
     list.each do |comparison|
-      anagrams = []
+      @anagrams = []
       comparison_arr = comparison.split("").sort
       if comparison_arr == @word.split("").sort
         anagrams << comparison
       end
     end
-    anagrams
+    @anagrams
   end
 end
