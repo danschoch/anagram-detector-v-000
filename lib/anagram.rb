@@ -9,7 +9,6 @@ class Anagram
 
   def match(list)
     arr_list = %w(#{list})
-    binding.pry
     arr_list.each do |comparison|
       @anagrams = []
       comparison_arr = comparison.split(//).sort
