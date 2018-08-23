@@ -10,7 +10,7 @@ class Anagram
       @anagrams = []
       comparison_arr = comparison.split("").sort
       if comparison_arr == @word.split("").sort
-        anagrams << comparison
+        @anagrams << comparison
       end
     end
     @anagrams
