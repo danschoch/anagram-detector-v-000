@@ -13,5 +13,6 @@ class Anagram
         anagrams << comparison
       end
     end
+    anagrams
   end
 end
