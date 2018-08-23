@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(list)
-    arr_list = %w(list)
+    arr_list = %w(#{list})
     arr_list.each do |comparison|
       @anagrams = []
       comparison_arr = comparison.split(//).sort
