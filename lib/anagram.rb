@@ -8,13 +8,8 @@ class Anagram
   end
 
   def match(list)
-    list.each do |comparison|
-      @anagrams = []
-      comparison_arr = comparison.split(//).sort
-      if comparison_arr == @word.split(//).sort
-        @anagrams << comparison
-      end
+    list.select do |comparison|
+      comparison.split(//).sort == @word.split(//).sort
     end
-    @anagrams
   end
 end
